@@ -1,6 +1,10 @@
 /* Make the background pastel green themed */
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   background-color: #e6ffe6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 /* Make the h2 labels text dark Green */   
 h2 {
@@ -9,6 +13,8 @@ h2 {
 /* Make the h1 label dark purple with rgb */
 h1 {
   color: rgb(102, 0, 102);
+  font-size: 36px;
+  font-weight: bold;
 }
 /* Make the h3 label light green with hsl */
 h4 {
@@ -17,6 +23,8 @@ h4 {
 /* Make the p label light grey with color*/
 p {
     color: grey;
+    font-size: 20px;
+    font-style: italic;
 }
 button:hover {
     color: blue;
@@ -124,22 +132,53 @@ button:active {
     }
 }
 
-/* Import the font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Apply the font to the HTML */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+button[disabled] {
+    background-color: gray;
+    color: white;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: bold;
+input[type="text"] {
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 16px;
 }
 
-p {
-  font-size: 20px;
-  font-style: italic;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, p {
+    font-size: 14px;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div li {
+    font-weight: bold;
+}
+div > li {
+    color: blue;
+}
+
+li.highlight ~ li {
+    font-weight: bold;
+}
+
+li.highlight + li {
+    color: red;
+}
+p.important {
+    font-weight: bold;
 }
   
