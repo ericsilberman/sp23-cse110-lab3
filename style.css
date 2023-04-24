@@ -1,0 +1,145 @@
+/* Make the background pastel green themed */
+body {
+  background-color: #e6ffe6;
+}
+/* Make the h2 labels text dark Green */   
+h2 {
+    color: #024102;
+  }
+/* Make the h1 label dark purple with rgb */
+h1 {
+  color: rgb(102, 0, 102);
+}
+/* Make the h3 label light green with hsl */
+h4 {
+    color: hsl(120, 100%, 25%);
+}
+/* Make the p label light grey with color*/
+p {
+    color: grey;
+}
+button:hover {
+    color: blue;
+}
+button:active {
+    color: red;
+}
+
+/*Extra for lab 3*/
+/* Configure some id*/  
+#Attendence {
+  color: royalblue;
+  font-size: 1.3rem;
+  border-style: dotted;
+  border-color: lightseagreen;
+  border-width: 5px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 0px;  
+  position: relative;
+  display: flex;
+  order: calc();
+}
+#roar{
+    width: 50vw;
+    font-size: 1.3em;
+    margin: 1em 0;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    /*edit the text*/
+    color: #024102;
+    text-shadow: 1px 1px 2px #000000;
+    text-decoration: dotted;
+    text-align: left;
+
+}
+#Agenda{
+    font-size: 28px; /* set the font size of the container to 16 pixels */
+    width: 2in; /* set the width of the container to 2 inches */
+    margin: 20pt 0 0 0; /* set the top and bottom margins of the container to 20 points */
+    border-style: dotted;
+    border-color: lightseagreen;
+    border-width: 5px;
+    border-radius: 4px;
+    display: inline;
+    position: sticky
+}
+#Next_Time{
+    color: royalblue;
+    font-size: 1.3rem;
+    margin:auto;
+    padding: 10px 0px 30px 0px;
+    display: block;
+    height: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+/*layout - flexbox*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+}
+.red {
+    background-color: rgb(231, 127, 127);
+}
+  
+.blue {
+    background-color: rgb(119, 119, 226);
+}
+  
+.green {
+    background-color: rgb(102, 223, 102);
+}
+.yellow {
+    background-color: rgb(247, 247, 134);
+}
+/*layout - grid*/
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 300px;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .box {
+      margin-bottom: 10px;
+    }
+}
+
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Apply the font to the HTML */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  font-style: italic;
+}
+  
