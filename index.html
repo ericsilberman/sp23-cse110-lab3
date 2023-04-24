@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <Link rel="stylesheet" href="style.css" />
     <title>Lab 2 - Meeting Minutes</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
             <li>Review of next meeting</li>
         </ol>
 
-        
+        <hr>
 
         <h2 id="Attendence">Attendence</h2>
 
@@ -40,7 +40,7 @@
             <li><input type="checkbox" /> Sally</li>
         </ol>
 
-        
+        <hr>
 
         <h2 id="Next_Time">Next Time</h2>
         <section>
@@ -63,12 +63,16 @@
             </p>
         </section>
 
-        <h2>T-Rex Roar</h2>
+        <hr>
+
+        <h2 id="roar">T-Rex Roar</h2>
         
         
         <audio controls>
             <source src="https://www.soundjay.com/misc/sounds/t-rex-roar-01.mp3" type="audio/mp3">
         </audio>
+
+        <hr>
 
         <h2>Video of a cat</h2>
         <video width="320" height="240" controls>
@@ -176,6 +180,25 @@
         </select>
 
         <br>
+
+        <h2>Layouts</h2>
+
+
+        <h3>Flexbox</h3>
+        <div class="container">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+            <div class="box green"></div>
+        </div>
+
+
+        <h3>Grid</h3>
+        <div class="layout">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+            <div class="box green"></div>
+            <div class="box yellow"></div>
+        </div>
 
         <button type="button" onclick="alert('Finished!')">Click Me!</button>
 
